@@ -23,8 +23,8 @@ group 'com.vkraevskiy.tviews'
 version '1.0.0'
 
 pluginBundle {
-    website = 'http://www.gradle.org/'
-    vcsUrl = 'https://github.com/gradle/gradle'
+    website = 'https://github.com/alwayswannasleep/'
+    vcsUrl = 'https://github.com/alwayswannasleep/tviews-plugin'
     description = 'Gradle TViews generating plugin!'
     tags = ['greetings', 'salutations']
 
