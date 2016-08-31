@@ -1,18 +1,11 @@
-buildscript {
-    repositories {
-        jcenter()
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-
-    dependencies {
-        classpath "com.gradle.publish:plugin-publish-plugin:0.9.5"
-    }
+plugins {
+    id 'groovy'
+    id 'com.gradle.plugin-publish' version '0.9.5'
 }
 
-apply plugin: "com.gradle.plugin-publish"
-apply plugin: 'groovy'
+repositories {
+    jcenter()
+}
 
 dependencies {
     compile gradleApi()
@@ -23,15 +16,14 @@ group 'com.vkraevskiy.tviews'
 version '1.0.0'
 
 pluginBundle {
-    website = 'https://github.com/alwayswannasleep/'
-    vcsUrl = 'https://github.com/alwayswannasleep/tviews-plugin'
-    description = 'Gradle TViews generating plugin!'
-    tags = ['greetings', 'salutations']
-
+    website = 'https://github.com/alwayswannasleep/tviews-plugin'
+    vcsUrl = 'https://github.com/alwayswannasleep/tviews-plugin.git'
     plugins {
         tviewsPlugin {
             id = 'com.vkraevskiy.tviews'
             displayName = 'Gradle TViews generating plugin'
+            description = 'Gradle TViews generating plugin!'
+            tags = ['typeface', 'android']
         }
     }
 }
