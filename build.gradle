@@ -1,7 +1,8 @@
 plugins {
-    id 'groovy'
     id 'com.gradle.plugin-publish' version '0.9.5'
 }
+
+apply plugin: 'groovy'
 
 repositories {
     jcenter()
